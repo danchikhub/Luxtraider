@@ -30,6 +30,14 @@ document.documentElement.addEventListener("click", function (e) {
     }
 });
 
+
+$(document).ready(function () {
+    $('.icon-menu').click(function (event) {
+        $('.icon-menu,.menu__body').toggleClass('active');
+        $('body').toggleClass('lock')
+    })
+})
+
 function ibg() {
 
     let ibg = document.querySelectorAll("._ibg");
